@@ -110,7 +110,7 @@ export class GameEngin {
       }
     });
 
-    console.log(currentArray );
+    //console.log(currentArray );
 
     if (isWinner) {
       this.gameEnd();

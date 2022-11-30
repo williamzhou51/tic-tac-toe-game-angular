@@ -35,8 +35,6 @@ export class MainGameComponent implements OnInit {
       const color = this.game.getPlayerColor();
       subarea.currentTarget.classList.add(color);
 
-
-
       await this.game.checkWinner().then((end: boolean) => {
         if(this.game.gameStatus ===0 && end){
           // @ts-ignore
