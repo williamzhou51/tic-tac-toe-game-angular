@@ -1,0 +1,50 @@
+<div class="main-container" style = "margin-top: 40px" >
+  <h1 style = "font-weight: bold; text-align: center; color: #fff;">Tic Tac Toe</h1>
+
+  <div class="filed d-flex justify-content-center">
+  <h3 style = "font-weight: lighter; text-align: center; color: #fff;">by Ran Zhou</h3>
+  </div>
+  <div class="field d-flex justify-content-center">
+    <p class="current-status mat-display-1" style="color: #ffffff;">Let's Play the Games!</p>
+  </div>
+
+  <div *ngIf ="this.game.gameStatus ===0" class="field d-flex justify-content-center" style="width: 100%; text-align: center; margin-top: 50px">
+    <button mat-raised-button color="primary" (click)="startGame()">Click to Start Now!</button>
+  </div>
+<!--  <div *ngIf ="this.game.gameStatus ===1" class="field d-flex justify-content-center" style="width: 100%; text-align: center; margin-top: 50px">-->
+<!--    <button mat-raised-button color="primary" (click)="startGame()">Play Again</button>-->
+<!--  </div>-->
+
+
+  <div *ngIf="this.game.gameStatus ===1" class = "game-area">
+
+    <div class = "players player-one-font" style="align-self: center">
+      <p class="mat-body-1" style="font-size:24px; margin: 0 0 10px 20px; ">Player 1</p>
+    </div>
+
+    <div class = "game-field container-fluid">
+      <div class="row ">
+        <div (click)="clickSubArea($event)"  position="0" class="sub-field col-4" ></div>
+        <div (click)="clickSubArea($event)" position="1" class="sub-field col-4" ></div>
+        <div (click)="clickSubArea($event)" position="2" class="sub-field col-4" ></div>
+      </div>
+    <div class="row">
+      <div (click)="clickSubArea($event)" position="3" class="sub-field col-4" ></div>
+      <div (click)="clickSubArea($event)" position="4" class="sub-field col-4" ></div>
+      <div (click)="clickSubArea($event)" position="5" class="sub-field col-4" ></div>
+    </div>
+    <div class="row">
+      <div (click)="clickSubArea($event)" position="6" class="sub-field col-4" ></div>
+      <div (click)="clickSubArea($event)" position="7" class="sub-field col-4" ></div>
+      <div (click)="clickSubArea($event)" position="8" class="sub-field col-4" ></div>
+    </div>
+  </div>
+
+  <div class = "players player-two-font" style="align-self: center;">
+    <p class="mat-body-1" style="font-size: 24px; margin: 0 20px 10px 0; ">Player 2</p>
+  </div>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,36 @@
+.main-container .game-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  .game-field {
+    max-width: 300px;
+    margin-top: 30px;
+} .sub-field{
+
+    max-width: 300px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ffffff;
+  }
+  .player-one{
+
+    background: aqua;
+
+
+
+  }
+  .player-two{
+
+    background: khaki;
+  }
+  .player-one-font{
+    color: aqua;
+  }
+  .player-two-font{
+    color: khaki;
+  }
+
+
